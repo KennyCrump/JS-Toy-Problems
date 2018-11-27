@@ -9,15 +9,15 @@
 
 
 function caseReverse(str) {
-  var strArray = str.split(' ');
-  for (var i = 1; i < strArray.length; i++) {
+  var strArray = str.split('');
+  for (var i = 0; i < strArray.length; i++) {
     if (strArray[i] === strArray[i].toUpperCase()) {
-      strArray[i].toLowerCase();
+      strArray[i] = strArray[i].toLowerCase();
     } else {
-      strArray[i].toUpperCase();
+      strArray[i] = strArray[i].toUpperCase();
     }
   }
-  return strArray
+  return strArray.join('')
 }
 
 console.log(caseReverse('boB rOss IS thE OrIgInAl GanGster'));

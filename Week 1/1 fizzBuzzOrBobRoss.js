@@ -7,3 +7,30 @@
 
 // Challenge Mode
 // Use a 'while' or 'do while' loop
+
+function fizz(num){
+    let i = 1
+    for(let i = 1; i < num; i++){
+        if(i % 3 === 0 && i % 5 === 0){
+            console.log('Bob Ross')
+        }else if(i % 3 === 0){
+            console.log('Bob')
+        }else if(i % 5 === 0){
+            console.log('Ross')
+        }else{
+            console.log(i)
+        }
+    }
+    while(i < num){
+        if(i % 3 === 0 && i % 5 === 0){
+            console.log('Bob Ross')
+        }else if(i % 3 === 0){
+            console.log('Bob')
+        }else if(i % 5 === 0){
+            console.log('Ross')
+        }else{
+            console.log(i)
+        }
+        i++
+    }
+}

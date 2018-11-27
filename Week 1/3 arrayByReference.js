@@ -22,7 +22,7 @@ console.log('countInventory:', countInventory(oldInventory));
 
 // All of the animals were very popular and were all sold in the past week
 // these same animals were ordered for the next week
-var newInventory = oldInventory;
+var newInventory = oldInventory.slice(); //***************Array was set to oldArray*********************/
 
 // some new, exotic animals were ordered for the next week as well.
 newInventory.push(['gorilla', 'alligator', 'lion', 'humpback whale']);
